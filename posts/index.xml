@@ -4,7 +4,7 @@
     <title>Posts on 전기현 Curriculum Vitae</title>
     <link>https://gihyeoncv.github.io/posts/</link>
     <description>Recent content in Posts on 전기현 Curriculum Vitae</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 09 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://gihyeoncv.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://gihyeoncv.github.io/posts/education/</link>
       <pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate>
       <guid>https://gihyeoncv.github.io/posts/education/</guid>
-      <description>첫 Hugo 블로그 포스트입니다!&#xA;여기서부터 내가 직접 디자인할 수 있어요.</description>
+      <description>&lt;p&gt;Token Test&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
