@@ -5,4 +5,10 @@ body {
   line-height: 1.6;
   padding: 2rem;
 }
-a { text-decoration: none; color: darkblue; }
+
+a {
+    color: royalblue;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-x: scroll;
+}
