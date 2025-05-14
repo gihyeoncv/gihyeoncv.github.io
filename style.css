@@ -1,7 +1,9 @@
 body {
   max-width: 900px;
   margin: 0 auto;
-  font-family: sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'IBM Plex Sans KR', sans-serif; */
+  /* font-family: 'Nanum Gothic', sans-serif; */
   line-height: 1.6;
   padding: 2rem;
 }
@@ -11,4 +13,29 @@ a {
     font-weight: bold;
     text-decoration: none;
     overflow-x: scroll;
+}
+
+.katex-display {
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    overflow: hidden;
+    vertical-align: top;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.bracketed-list {
+    list-style: none;
+    counter-reset: ref;
+    padding-left: 0;
+}
+.bracketed-list li {
+    counter-increment: ref;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 2em;
+}
+  .bracketed-list li::before {
+    content: "[" counter(ref) "] ";
+    position: absolute;
+    left: 0;
 }
