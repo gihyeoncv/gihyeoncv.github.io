@@ -39,3 +39,9 @@ a {
     position: absolute;
     left: 0;
 }
+
+.paper-link {
+    color: inherit;
+    font-weight: normal;
+    text-decoration: none; /* 혹시 모를 밑줄 방지용 */
+}
