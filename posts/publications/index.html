@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
+
+
+
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/mhchem.min.js"
+        integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH"
+        crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+<script>
+  
+  function renderKaTex(target) {
+    renderMathInElement(target, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ],
+      trust: true,
+      trust: (context) =>
+        ["\\htmlId", "\\href", "\\includegraphics"].includes(context.command),
+      macros: {
+      },
+      throwOnError: false,
+    });
+  }
+</script> 
 <head>
     <meta charset="UTF-8">
     <title>Curriculum Vitae (Gihyeon Jeon, 전기현)</title>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="/style.css">
 
     
@@ -53,9 +89,15 @@
     <h2 id="publications">Publications</h2>
 <h3 id="journal-articles">Journal articles</h3>
  <ol class="bracketed-list">
-    <li> <b>Gihyeon Jeon</b>. "<i><a href="https://www.tandfonline.com/doi/full/10.1080/00036811.2025.2491643" class="paper-link">Range description for an attenuated conical Radon transform with fixed central axis and opening angle</a></i>". Applicable Analysis (2025), pp. 1-13. </li>
-    <li> Souvik Roy, <b>Gihyeon Jeon</b>, and Sunghwan Moon. "<i><a href="https://doi.org/10.1016/j.amc.2023.128024" class="paper-link">Radon transform with Gaussian beam: Theoretical and numerical reconstruction scheme</a></i>". Applied Mathematics and Computation 452 (2023), p. 128024. </li>
-    <li> <b>Gihyeon Jeon</b> and Sunghwan Moon. "<i><a href="https://www.tandfonline.com/doi/full/10.1080/10652469.2020.1846035" class="paper-link">Singular value decomposition of the attenuated conical Radon transform with a fixed central axis and opening angle</a></i>". Integral Transforms and Special Functions 32.10 (2021), pp. 812–822. </li>
+    <li> <b>Gihyeon Jeon</b><sup>1</sup><br>
+         <i><a href="https://www.tandfonline.com/doi/full/10.1080/00036811.2025.2491643" class="paper-link">Range description for an attenuated conical Radon transform with fixed central axis and opening angle</a></i><br>
+         Applicable Analysis (2025), pp. 1-13. </li>
+    <li> Souvik Roy, <b>Gihyeon Jeon</b>, and Sunghwan Moon<br>
+         <i><a href="https://doi.org/10.1016/j.amc.2023.128024" class="paper-link">Radon transform with Gaussian beam: Theoretical and numerical reconstruction scheme</a></i><br>
+         Applied Mathematics and Computation 452 (2023), p. 128024. </li>
+    <li> <b>Gihyeon Jeon</b><sup>1</sup> and Sunghwan Moon<br>
+         <i><a href="https://www.tandfonline.com/doi/full/10.1080/10652469.2020.1846035" class="paper-link">Singular value decomposition of the attenuated conical Radon transform with a fixed central axis and opening angle</a></i><br>
+         Integral Transforms and Special Functions 32.10 (2021), pp. 812–822. </li>
   </ol>
 <h3 id="books">Books</h3>
  <ol class="bracketed-list">

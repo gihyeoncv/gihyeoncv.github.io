@@ -45,3 +45,20 @@ a {
     font-weight: normal;
     text-decoration: none; /* 혹시 모를 밑줄 방지용 */
 }
+
+.katex-display {
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    overflow: hidden;
+    vertical-align: top;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.katex-display:hover { overflow: auto hidden }
+/* (23.05.05, 전) katex 한글 폰트 지정  */
+.katex .hangul_fallback {
+	/* font-family: Nanum Gothic */
+	font-family: 'Nanum Myeongjo'
+	/* font-family: 'Noto Sans KR' */    
+}
+/* 수식 지원 END */
