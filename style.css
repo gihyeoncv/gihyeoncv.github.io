@@ -62,3 +62,20 @@ a {
 	/* font-family: 'Noto Sans KR' */    
 }
 /* 수식 지원 END */
+
+
+.first-col {
+    position: relative;
+    width: 100px;
+}
+
+/* 실제 세로선 */
+.first-col::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 1px;      /* 위쪽 여백 */
+    bottom: 1px;   /* 아래쪽 여백 */
+    width: 1px;
+    background: black;
+}
