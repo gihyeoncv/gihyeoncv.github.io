@@ -79,3 +79,60 @@ a {
     width: 1px;
     background: black;
 }
+
+/* ===== 인쇄(PDF) 전용 스타일 ===== */
+@page {
+    size: A4;
+    margin: 15mm 18mm;
+}
+@media print {
+    body {
+        max-width: none;
+        padding: 0;
+        font-size: 11pt;
+        line-height: 1.5;
+    }
+    .no-print { display: none !important; }
+    h1 { font-size: 20pt; margin-top: 0; }
+    h2, h3 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+    li, tr, table {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    img { max-width: 100%; }
+    a { color: royalblue; }
+}
+
+/* (26.09.10, 전) 마우스를 올리면 이미지가 떠오르는 텍스트 (Invited Talk 포스터 등) */
+.hover-img {
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px dotted #888;
+}
+.hover-img img {
+    position: absolute;
+    left: 0;
+    top: 1.6em;
+    width: 320px;
+    max-width: 90vw;
+    height: auto;
+    z-index: 10;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease;
+    pointer-events: none;
+}
+.hover-img:hover img {
+    opacity: 1;
+    visibility: visible;
+}
+@media print {
+    .hover-img { border-bottom: none; }
+    .hover-img img { display: none !important; }
+}
